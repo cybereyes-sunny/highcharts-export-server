@@ -10,7 +10,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     groups:
       regular-updates:
         applies-to: version-updates
@@ -23,13 +23,13 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
   - package-ecosystem: "docker"
     directory: "/"
     registries:
       - dhi
     schedule:
-      interval: "daily"
+      interval: "weekly"
     ignore:
       - dependency-name: "node"
         versions: ["> 25.0.0-0-sfw-dev"]
